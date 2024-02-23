@@ -5,6 +5,7 @@ class VentanaInicio extends JFrame {
 	
 	GridBagLayout gbl = new GridBagLayout();
 	GridBagConstraints gbc = new GridBagConstraints();
+	ImageIcon iconobtn = new ImageIcon("src/Imagenes/suscribirse.png");
 	
 	public VentanaInicio() {
 		
@@ -91,8 +92,8 @@ class VentanaInicio extends JFrame {
 		
 		JLabel txt9 = new JLabel("Email Address");
 		agregarComponenteSinFill(txt9, 2, 1, 1, 1);
-		
-		JTextField caja3 = new JTextField();
+
+		JFormattedTextField caja3 = new JFormattedTextField();
 		agregarComponenteSinFill(caja3, 2, 2, 2, 1);
 		
 		JLabel txt10 = new JLabel("First Name");
@@ -107,7 +108,8 @@ class VentanaInicio extends JFrame {
 		JTextField caja5 = new JTextField();
 		agregarComponenteSinFill(caja5, 2, 6, 2, 1);
 		
-		JButton btn1 = new JButton("Subscribe");
+		JButton btn1 = new JButton();
+		btn1.setIcon(iconobtn);
 		agregarComponenteSinFill(btn1, 2, 7, 1, 1);
 		
 		JLabel txtespacio6 = new JLabel(" ");
